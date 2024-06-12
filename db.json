@@ -1,0 +1,68 @@
+{
+    "flower":[
+        {
+            "id": 1,
+            "key": "1",
+            "name": "roses ~английская роза~",
+            "price": 3000,
+            "country": "US",
+            "count": 5,
+            "img": "https://cdn.rostok.nova-sphere.ru/upload/products/images/24048/458_458/photo_3.webp"
+        },
+        {
+            "id": 2,
+            "key": "2",
+            "name": "peonies ~пион армани~",
+            "price": 20000,
+            "country": "US",
+            "count": 11,
+            "img": "https://artflora.ru/sites/default/files/field/image/photo_2024-05-30_18.29.07.jpeg"
+
+        },
+        {
+            "id": 3,
+            "key": "3",
+            "name": "gypsophila ~гипсофила тихоокеанская~",
+            "price": 900,
+            "country": "US",
+            "count": 3,
+            "img": "https://i.siteapi.org/7sKZAsfqg7nrlJRocAQPfZbsXIk=/0x0:564x564/s.siteapi.org/351590018c80f78.ru/img/25wzuzqfkboggss4ss4sgcw4wwcs4o"
+        }
+    ],
+    
+    "sweets":[
+        {
+            "id": 1,
+            "key": "1",
+            "name": "strawberries ~клубника кисс неллис~",
+            "price": 900,
+            "count": 3,
+            "country": "US",
+            "img":"https://klau.club/uploads/posts/2023-05/1685561643_klau-club-p-plodonozhka-klubniki-pinterest-66.jpg"
+        },
+        {
+            "id": 2,
+            "key": "2",
+            "name": "mango ~манго нам док май~",
+            "price": 2000,
+            "count": 2,
+            "country": "US",
+            "img":"https://i.redd.it/ffqfo4lt0rk71.jpg"
+        },
+        {
+            "id": 3,
+            "key": "3",
+            "name": "blackberry ~ежевика торнлесс эвергрин~",
+            "price": 1000,
+            "count": 3,
+            "country": "US",
+            "img":"https://kartinki.pics/uploads/posts/2021-07/1626735806_38-kartinkin-com-p-yezhevika-lesnaya-yeda-krasivo-foto-40.jpg"
+        }
+    ],
+    "overlays":[
+    ],
+
+    "home":[
+        
+    ]
+}
