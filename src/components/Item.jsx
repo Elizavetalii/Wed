@@ -5,42 +5,41 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppContext } from '../App'
 
 const Item = (props) => {
-
   const context = React.useContext(AppContext);
   const onClickAdd = () => {
-    const {id, myId, name:name, description:description, price:price} = props;
-    
+    const {id, myId, img:img,name:name, price:price, count:count,country:country} = props;
+    props.onPlus({id, myId,img, name, price,count,country});
   }
+
+  const onClickAddLike = () => {
+    const {id, myId, img:img,name:name, price:price, count:count,country:country} = props;
+    props.onLike({id, myId,img, name, price,count,country});
+  }
+
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Text>
-          {props.description}
+          Цена ~{props.price} руб.
         </Card.Text>
         <Card.Text>
-          Цена ~{props.price}
-        </Card.Text>
-        <Card.Text>
-          Количество ~ {props.count}
+          Количество ~ {props.count} шт.
         </Card.Text>
         <Card.Text>
           Страна ~ {props.country}
         </Card.Text>
         <Button onClick={onClickAdd}>
           {
-            context.cart.find(item => item.id === props.id)
-             ? 'Уже в корзине'
-              : 'Добавить в корзину'
+            context.isAdd(props.myId) ? 'Товар в корзине' : 'Добавить в корзину'
+          }
+        </Button>
 
-            
-          }
+        <Button onClick={onClickAddLike}>
           {
-            context.isAdd(props.myId) ? 'Добавлен' 
-            : 'Добавить в корзину'
+            context.isAddLike(props.myId) ? '♥' : '♡'
           }
-          Добавить в корзину
         </Button>
       </Card.Body>
     </Card>

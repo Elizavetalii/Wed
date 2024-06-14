@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import axios from "axios";
+import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import CartItem from './components/CartItem';
 import{ Route, Routes} from 'react-router-dom';
@@ -8,43 +8,72 @@ import Home from './components/Home';
 import Header from './components/Header';
 import Overlay from './components/Overlay';
 import CardSweets from './components/CardSweets';
+import Like from './components/Like';
 
 export const AppContext = React.createContext({});
 
 function App() {
-  const [data, setData] = useState([]);
-  const [overlayItems, setoverlayItems] = useState([]);
-  const [overlayHome, setoverlayHome] = useState([]);
+  const [flower, setflower] = useState([]);
   const [sweets, setsweets] = useState([]);
+
+  const [overlayItems, setoverlay] = useState([]);
+  const [likeItems, setlike] = useState([]);
+  const [home, sethome] = useState([]);
 
   useEffect(() => {
     async function getData() {
-    const datas = await axios.get('http://localhost:3001/flower');
-    const overlayData = await axios.get('http://localhost:3001/overlays');
-    const overlayHomeData = await axios.get('http://localhost:3001/home');
-    const sweetsData = await axios.get('http://localhost:3001/sweets');
-    setData(datas.data);
-    setoverlayItems(overlayData.data);
-    setoverlayHome(overlayHomeData.data);
-    setsweets(sweetsData.data);
+      const flower = await axios.get('http://localhost:3001/flower');
+      const sweets = await axios.get('http://localhost:3001/sweets');
+      const overlay = await axios.get('http://localhost:3001/overlays');
+      const like = await axios.get('http://localhost:3001/like');
+      const home = await axios.get('http://localhost:3001/home');
+      setflower(flower.data);
+      setsweets(sweets.data);
+      setoverlay(overlay.data);
+      sethome(home.data);
+      setlike(like.data);
     }
     getData();
   }, [])
 
-  const isAdd = (myId) => {
-     return overlayItems.some((objIsAdd) => objIsAdd.myId === myId)
+
+  const isAddLike = (myId) => {
+    return likeItems.some((objIsAddLike) => objIsAddLike.myId === myId)
   }
+
+  const deleteItemLike = (id) => {
+    axios.delete(`http://localhost:3001/like/${id}`)
+    setlike((over) => likeItems.filter(item=> Number(item.id) !== Number(id)));
+  }
+
+
+  const isAdd = (myId) => {
+    return overlayItems.some((objIsAdd) => objIsAdd.myId === myId)
+  }
+
+  const deleteItem = (id) => {
+    axios.delete(`http://localhost:3001/overlays/${id}`)
+    setoverlay((over) => overlayItems.filter(item=> Number(item.id) !== Number(id)));
+  }
+
+  const totalPrice = overlayItems.reduce((total, obj)=> total + obj.price, 0);
 
   return (
     <AppContext.Provider
      value={{
-      data,
-      setData,
+      flower,
+      setflower,
       overlayItems,
-      setoverlayItems,
+      setoverlay,
       sweets,
       setsweets,
-      isAdd
+
+      isAdd,
+      isAddLike,
+
+      likeItems,
+      setlike,
+      home
     }}
      
      >
@@ -54,25 +83,51 @@ function App() {
       <Route
         path='/flower'
         element={
-          <CartItem item={data}/>
+          <CartItem 
+          item={flower} 
+          overlayItems={overlayItems} 
+          setoverlay={setoverlay}
+          likeItems={likeItems}
+          setlike={setlike}
+          />
         }
       />
        <Route
         path='/overlay'
         element={
-          <Overlay overlayItems={overlayItems}/>
+          <Overlay 
+          overlayItems = {overlayItems}
+          deleteItem = {deleteItem}
+          totalPrice = {totalPrice}
+          />
         }
       />
         <Route
         path='/home'
         element={
-          <Home overlayHome={overlayHome}/>
+          <Home home={home}/>
         }
       />
        <Route
         path='/sweets'
         element={
-          <CardSweets item={sweets}/>
+          <CardSweets 
+          item={sweets} 
+          overlayItems={overlayItems} 
+          setoverlay={setoverlay}
+          likeItems={likeItems}
+          setlike={setlike}
+          />
+        }
+      />
+
+      <Route
+        path='/like'
+        element={
+          <Like 
+          deleteItemLike={deleteItemLike}
+          likeItems={likeItems}
+          />
         }
       />
 
