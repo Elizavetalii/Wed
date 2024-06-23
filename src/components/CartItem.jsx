@@ -4,6 +4,12 @@ import axios from 'axios';
 
 const CartItem = (props) => {
 
+  const [selectedType, setSelectedType] = React.useState(null);
+
+  const onTypeChange = (type) => {
+    setSelectedType(type);
+  };
+
   const onAddOverlay = (obj) => {
     try{
       if(props.overlayItems.find(item => Number(item.id) === Number(obj.id))){
@@ -35,11 +41,32 @@ const CartItem = (props) => {
       alert('Ошибка при добавлении товара в корзину');
     }
   };
-  
+
+  const onSearch = (inputValue) => {
+    props.setSearch(inputValue.target.value);
+
+  };
+
   return (
     <div className="flower">
-        {
-            props.item.map(obj=>{
+      <div>
+        <input onChange={onSearch} placeholder="Поиск"></input>
+      </div>
+      <div>
+        <select onChange={(e) => onTypeChange(e.target.value)}>
+          <option value="">Все типы</option>
+          <option value="Роза">Розы</option>
+          <option value="Пион">Пионы</option>
+          <option value="гипсофила">Гипсофилы</option>
+        </select>
+      </div>
+
+      {
+        props.item
+        .filter((item) =>
+          (!selectedType || item.type === selectedType) && item.name.toLowerCase().includes(props.search.toLowerCase())
+        )
+          .map(obj=>{
                 return(
                     <Item
                     id={obj.id}
@@ -55,7 +82,6 @@ const CartItem = (props) => {
                     onLike ={(cartObj)=>onAddLike(cartObj)}
                     />
                 )
-
             })
         }
     </div>

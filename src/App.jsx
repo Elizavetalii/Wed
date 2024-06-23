@@ -9,17 +9,20 @@ import Header from './components/Header';
 import Overlay from './components/Overlay';
 import CardSweets from './components/CardSweets';
 import Like from './components/Like';
+import CardHome from './components/CardHome';
+import { useNavigate } from 'react-router-dom';
 
 export const AppContext = React.createContext({});
 
 function App() {
   const [flower, setflower] = useState([]);
   const [sweets, setsweets] = useState([]);
-
   const [overlayItems, setoverlay] = useState([]);
   const [likeItems, setlike] = useState([]);
   const [home, sethome] = useState([]);
-
+  const [search, setSearch] = useState('');
+  const navigate = useNavigate();
+  
   useEffect(() => {
     async function getData() {
       const flower = await axios.get('http://localhost:3001/flower');
@@ -27,6 +30,7 @@ function App() {
       const overlay = await axios.get('http://localhost:3001/overlays');
       const like = await axios.get('http://localhost:3001/like');
       const home = await axios.get('http://localhost:3001/home');
+      
       setflower(flower.data);
       setsweets(sweets.data);
       setoverlay(overlay.data);
@@ -34,7 +38,7 @@ function App() {
       setlike(like.data);
     }
     getData();
-  }, [])
+  }, [navigate])
 
 
   const isAddLike = (myId) => {
@@ -67,28 +71,26 @@ function App() {
       setoverlay,
       sweets,
       setsweets,
-
       isAdd,
       isAddLike,
-
       likeItems,
       setlike,
       home
-    }}
-     
-     >
+    }}>
     <div>
     <Header/>
     <Routes>
       <Route
         path='/flower'
         element={
-          <CartItem 
-          item={flower} 
+          <CartItem
+          item={flower}
           overlayItems={overlayItems} 
           setoverlay={setoverlay}
           likeItems={likeItems}
-          setlike={setlike}
+          setlike={setlike} 
+          search={search}
+          setSearch={setSearch}
           />
         }
       />
@@ -105,34 +107,36 @@ function App() {
         <Route
         path='/home'
         element={
-          <Home home={home}/>
+          <CardHome item={home}
+          sethome={sethome}
+          />
         }
       />
        <Route
         path='/sweets'
         element={
-          <CardSweets 
-          item={sweets} 
-          overlayItems={overlayItems} 
+          <CardSweets
+          item={sweets}
+          overlayItems={overlayItems}
           setoverlay={setoverlay}
           likeItems={likeItems}
           setlike={setlike}
+          search={search}
+          setSearch={setSearch}
           />
         }
       />
-
       <Route
         path='/like'
         element={
-          <Like 
+          <Like
           deleteItemLike={deleteItemLike}
           likeItems={likeItems}
           />
         }
-      />
-
-    </Routes>
-    </div>
+        />
+        </Routes>
+      </div>
     </AppContext.Provider>
   );
 }

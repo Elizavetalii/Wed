@@ -8,7 +8,8 @@
       "price": 3000,
       "country": "US",
       "count": 5,
-      "img": "https://cdn.rostok.nova-sphere.ru/upload/products/images/24048/458_458/photo_3.webp"
+      "img": "https://cdn.rostok.nova-sphere.ru/upload/products/images/24048/458_458/photo_3.webp",
+      "type": "Роза"
     },
     {
       "myId": "2",
@@ -18,7 +19,8 @@
       "price": 20000,
       "country": "US",
       "count": 11,
-      "img": "https://artflora.ru/sites/default/files/field/image/photo_2024-05-30_18.29.07.jpeg"
+      "img": "https://artflora.ru/sites/default/files/field/image/photo_2024-05-30_18.29.07.jpeg",
+      "type": "Пион"
     },
     {
       "myId": "3",
@@ -28,7 +30,8 @@
       "price": 900,
       "country": "US",
       "count": 3,
-      "img": "https://i.siteapi.org/7sKZAsfqg7nrlJRocAQPfZbsXIk=/0x0:564x564/s.siteapi.org/351590018c80f78.ru/img/25wzuzqfkboggss4ss4sgcw4wwcs4o"
+      "img": "https://i.siteapi.org/7sKZAsfqg7nrlJRocAQPfZbsXIk=/0x0:564x564/s.siteapi.org/351590018c80f78.ru/img/25wzuzqfkboggss4ss4sgcw4wwcs4o",
+      "type": "гипсофила"
     }
   ],
   "sweets": [
@@ -40,7 +43,8 @@
       "price": 900,
       "count": 3,
       "country": "US",
-      "img": "https://klau.club/uploads/posts/2023-05/1685561643_klau-club-p-plodonozhka-klubniki-pinterest-66.jpg"
+      "img": "https://klau.club/uploads/posts/2023-05/1685561643_klau-club-p-plodonozhka-klubniki-pinterest-66.jpg",
+      "type": "Ягоды"
     },
     {
       "myId": "5",
@@ -50,7 +54,8 @@
       "price": 2000,
       "count": 2,
       "country": "US",
-      "img": "https://i.redd.it/ffqfo4lt0rk71.jpg"
+      "img": "https://i.redd.it/ffqfo4lt0rk71.jpg",
+      "type": "Ягоды"
     },
     {
       "myId": "6",
@@ -60,57 +65,297 @@
       "price": 1000,
       "count": 3,
       "country": "US",
-      "img": "https://kartinki.pics/uploads/posts/2021-07/1626735806_38-kartinkin-com-p-yezhevika-lesnaya-yeda-krasivo-foto-40.jpg"
+      "img": "https://kartinki.pics/uploads/posts/2021-07/1626735806_38-kartinkin-com-p-yezhevika-lesnaya-yeda-krasivo-foto-40.jpg",
+      "type": "Ягоды"
+    },
+    {
+      "myId": "7",
+      "id": "7",
+      "key": "3",
+      "name": "cake ~Лебединое озеро~",
+      "price": 10000,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://sun9-29.userapi.com/impf/P_tRXMKGSoY6KYDN4hVE88WXhTGwA0_ScISbDg/9dyTMiMDsQ0.jpg?quality=95&as=32x32,48x47,72x71,108x107,160x158,240x237,360x356,480x475,540x534,640x633,720x712,1080x1068,1280x1266,1440x1424,2560x2532&sign=0cc31d1c06f2b5d6f59fd36d991a4c95&from=bu&u=9i3SWC9FMVssWuMZ7upp6uQrht562hkAUgFkf1-mTxM&cs=320x316",
+      "type": "Торты"
+    },
+    {
+      "myId": "8",
+      "id": "8",
+      "key": "3",
+      "name": "cake ~Нежный праздник~",
+      "price": 9000,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://sun9-65.userapi.com/impf/vmYqTbrj2fN0fpuXO2uTSUTIkRecMFIYwONiEQ/V1TjD8VOGf4.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&sign=ca4086a690470b5fc33da2f815432f0f&from=bu&u=yuVzuL-bASYnVb5ldh0l7BJLhb2qaFrDWMv-XwmY_7o&cs=320x427",
+      "type": "Торты"
+    },
+    {
+      "myId": "9",
+      "id": "9",
+      "key": "3",
+      "name": "cake ~Клубничная поляна~",
+      "price": 9500,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://sun9-42.userapi.com/impf/Nww91I9tnijLR4Z_tFXf7Z2nXc2ef8H5H_q11w/OfLn49pDyCU.jpg?quality=95&as=32x38,48x58,72x87,108x130,160x192,240x289,360x433,480x577,540x650,640x770,720x866,1080x1299,1280x1540,1440x1732,2128x2560&sign=1bf03e2c668523e4d4f602f52a4ae1f0&from=bu&u=lL3sIAqKqFygQj_ak8cmLNo_ZK_iRMXsySpzYYuaBqg&cs=320x385",
+      "type": "Торты"
+    },
+    {
+      "myId": "10",
+      "id": "10",
+      "key": "3",
+      "name": "cake ~Ангельский мир~",
+      "price": 11000,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://sun9-45.userapi.com/impf/qZ0ELfBYePQBjqDSo5hv0u8FJHAWSTG_tLPpIg/gLQKb2_HyE0.jpg?quality=95&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,540x675,640x800,720x900,1080x1350,1280x1600,1440x1800,2048x2560&sign=51570c274cf25a55f7cc160a14c6de07&from=bu&u=ZPnO3rmLurIJCZJbU98mGSii24uyOpM_ojS96z-Wcu8&cs=320x400",
+      "type": "Торты"
+    },
+    {
+      "myId": "11",
+      "id": "11",
+      "key": "2",
+      "name": "cake ~Летний пикник~",
+      "price": 8000,
+      "count": 1,
+      "country": "US",
+      "img": "https://sun9-54.userapi.com/impf/9EZDwURJy19oQIOIkfKwQNyiTH1BOs8SQS24UA/OGMP9sI9emw.jpg?quality=95&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,540x675,640x800,720x900,1080x1350,1280x1600,1440x1800,2048x2560&sign=c7f8a1a63cd64ec11a06e66575707eb6&from=bu&u=X5n0EVi2md5kfjLECqk_XAnzre3t_wmOHuyAFO4kzUw&cs=320x400",
+      "type": "Торты"
+    },
+    {
+      "myId": "12",
+      "id": "12",
+      "key": "2",
+      "name": "cake ~Веселый праздник~",
+      "price": 10500,
+      "count": 1,
+      "country": "US",
+      "img": "https://sun9-58.userapi.com/impf/FG0lpnFq1AlVu9pDYoMEr1EFfMi9-IV5soS7fA/W239Py6kpdQ.jpg?quality=95&as=32x39,48x59,72x88,108x132,160x195,240x293,360x439,480x585,540x658,640x780,720x878,1080x1317,1280x1560,1440x1755,2100x2560&sign=5925cac7c6a60d6cc8540cbddff33aee&from=bu&u=en3aivsejpgZ5BbI3dTckTC2JbGIpqRgXMPUa0Sxg_c&cs=320x390",
+      "type": "Торты"
+    },
+    {
+      "myId": "13",
+      "id": "13",
+      "key": "2",
+      "name": "cocktail ~Брауни~",
+      "price": 800,
+      "count": 1,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/564x/49/ca/fc/49cafc6d9558067bee2d00a0263beb5b.jpg",
+      "type": "Коктели"
+    },
+    {
+      "myId": "14",
+      "id": "14",
+      "key": "2",
+      "name": "cocktail ~Голубое небо~",
+      "price": 1500,
+      "count": 2,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/564x/5e/ca/af/5ecaaf9d129b33f80a27e671b42993b1.jpg",
+      "type": "Коктели"
+    },
+    {
+      "myId": "15",
+      "id": "15",
+      "key": "2",
+      "name": "cocktail ~Облачная клубника~",
+      "price": 2000,
+      "count": 2,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/564x/93/b2/e7/93b2e7a260c3615a37b5a4ec195194a2.jpg",
+      "type": "Коктели"
+    },
+    {
+      "myId": "16",
+      "id": "16",
+      "key": "2",
+      "name": "ice cream ~Малиновый пломбир~",
+      "price": 2500,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://i.pinimg.com/736x/5a/39/f6/5a39f638d4092e716a3b2b065eedf0b6.jpg",
+      "type": "Мороженое"
+    },
+    {
+      "myId": "17",
+      "id": "17",
+      "key": "2",
+      "name": "ice cream ~Цветочный пломбир~",
+      "price": 3000,
+      "count": 1,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/736x/ae/60/c8/ae60c8c1d89d8eebb05b1a92331f2c4c.jpg",
+      "type": "Мороженое"
+    },
+    {
+      "myId": "18",
+      "id": "18",
+      "key": "2",
+      "name": "ice cream ~Лавандовый айс~",
+      "price": 3500,
+      "count": 1,
+      "country": "US",
+      "img": "https://i.pinimg.com/736x/36/57/46/365746e00a3ee965af8ab7cc9376b397.jpg",
+      "type": "Мороженое"
+    },
+    {
+      "myId": "19",
+      "id": "19",
+      "key": "2",
+      "name": "yogurt ~Чиа~",
+      "price": 1200,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://i.pinimg.com/564x/c0/fc/d6/c0fcd60f8362f5b47753587090664aa8.jpg",
+      "type": "Йогурт"
+    },
+    {
+      "myId": "20",
+      "id": "20",
+      "key": "2",
+      "name": "yogurt ~Малина~",
+      "price": 1300,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://i.pinimg.com/564x/f3/e8/d1/f3e8d1de615149bed4ab4b3224796788.jpg",
+      "type": "Йогурт"
+    },
+    {
+      "myId": "21",
+      "id": "21",
+      "key": "2",
+      "name": "yogurt ~Банан~",
+      "price": 1400,
+      "count": 1,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/564x/18/89/2a/18892a2115bb5d188f56c7fc8bc9f33d.jpg",
+      "type": "Йогурт"
     }
   ],
   "overlays": [
     {
-      "id": "6",
-      "myId": "6",
-      "img": "https://kartinki.pics/uploads/posts/2021-07/1626735806_38-kartinkin-com-p-yezhevika-lesnaya-yeda-krasivo-foto-40.jpg",
-      "name": "blackberry ~ежевика торнлесс эвергрин~",
-      "price": 1000,
-      "count": 3,
-      "country": "US"
-    },
-    {
-      "id": "1",
-      "myId": "1",
-      "img": "https://cdn.rostok.nova-sphere.ru/upload/products/images/24048/458_458/photo_3.webp",
-      "name": "roses ~английская роза~",
-      "price": 3000,
-      "count": 5,
-      "country": "US"
-    },
-    {
-      "id": "4",
-      "myId": "4",
-      "img": "https://klau.club/uploads/posts/2023-05/1685561643_klau-club-p-plodonozhka-klubniki-pinterest-66.jpg",
-      "name": "strawberries ~клубника кисс неллис~",
-      "price": 900,
-      "count": 3,
-      "country": "US"
-    },
-    {
-      "id": "5",
-      "myId": "5",
-      "img": "https://i.redd.it/ffqfo4lt0rk71.jpg",
-      "name": "mango ~манго нам док май~",
-      "price": 2000,
-      "count": 2,
-      "country": "US"
+      "id": "13",
+      "myId": "13",
+      "img": "https://i.pinimg.com/564x/49/ca/fc/49cafc6d9558067bee2d00a0263beb5b.jpg",
+      "name": "cocktail ~Брауни~",
+      "price": 800,
+      "count": 1,
+      "country": "South Korea"
     }
   ],
   "like": [
     {
-      "id": "4",
-      "myId": "4",
-      "img": "https://klau.club/uploads/posts/2023-05/1685561643_klau-club-p-plodonozhka-klubniki-pinterest-66.jpg",
-      "name": "strawberries ~клубника кисс неллис~",
-      "price": 900,
-      "count": 3,
-      "country": "US"
+      "id": "13",
+      "myId": "13",
+      "img": "https://i.pinimg.com/564x/49/ca/fc/49cafc6d9558067bee2d00a0263beb5b.jpg",
+      "name": "cocktail ~Брауни~",
+      "price": 800,
+      "count": 1,
+      "country": "South Korea"
     }
   ],
-  "home": []
+  "home": [
+    {
+      "myId": "1",
+      "name": "gypsophila ~гипсофила тихоокеанская~",
+      "price": 900,
+      "country": "US",
+      "count": 3,
+      "img": "https://i.siteapi.org/7sKZAsfqg7nrlJRocAQPfZbsXIk=/0x0:564x564/s.siteapi.org/351590018c80f78.ru/img/25wzuzqfkboggss4ss4sgcw4wwcs4o",
+      "type": "гипсофила",
+      "id": "2b4a"
+    },
+    {
+      "myId": "2",
+      "name": "cake ~Лебединое озеро~",
+      "price": 10000,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://sun9-29.userapi.com/impf/P_tRXMKGSoY6KYDN4hVE88WXhTGwA0_ScISbDg/9dyTMiMDsQ0.jpg?quality=95&as=32x32,48x47,72x71,108x107,160x158,240x237,360x356,480x475,540x534,640x633,720x712,1080x1068,1280x1266,1440x1424,2560x2532&sign=0cc31d1c06f2b5d6f59fd36d991a4c95&from=bu&u=9i3SWC9FMVssWuMZ7upp6uQrht562hkAUgFkf1-mTxM&cs=320x316",
+      "type": "Торты",
+      "id": "2745"
+    },
+    {
+      "myId": "3",
+      "name": "cake ~Клубничная поляна~",
+      "price": 9500,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://sun9-42.userapi.com/impf/Nww91I9tnijLR4Z_tFXf7Z2nXc2ef8H5H_q11w/OfLn49pDyCU.jpg?quality=95&as=32x38,48x58,72x87,108x130,160x192,240x289,360x433,480x577,540x650,640x770,720x866,1080x1299,1280x1540,1440x1732,2128x2560&sign=1bf03e2c668523e4d4f602f52a4ae1f0&from=bu&u=lL3sIAqKqFygQj_ak8cmLNo_ZK_iRMXsySpzYYuaBqg&cs=320x385",
+      "type": "Торты",
+      "id": "e32a"
+    },
+    {
+      "myId": "4",
+      "name": "cake ~Ангельский мир~",
+      "price": 11000,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://sun9-45.userapi.com/impf/qZ0ELfBYePQBjqDSo5hv0u8FJHAWSTG_tLPpIg/gLQKb2_HyE0.jpg?quality=95&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,540x675,640x800,720x900,1080x1350,1280x1600,1440x1800,2048x2560&sign=51570c274cf25a55f7cc160a14c6de07&from=bu&u=ZPnO3rmLurIJCZJbU98mGSii24uyOpM_ojS96z-Wcu8&cs=320x400",
+      "type": "Торты",
+      "id": "ac0a"
+    },
+    {
+      "myId": "5",
+      "name": "cocktail ~Брауни~",
+      "price": 800,
+      "count": 1,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/564x/49/ca/fc/49cafc6d9558067bee2d00a0263beb5b.jpg",
+      "type": "Коктели",
+      "id": "1b6f"
+    },
+    {
+      "myId": "7",
+      "name": "cocktail ~Облачная клубника~",
+      "price": 2000,
+      "count": 2,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/564x/93/b2/e7/93b2e7a260c3615a37b5a4ec195194a2.jpg",
+      "type": "Коктели",
+      "id": "78e1"
+    },
+    {
+      "myId": "8",
+      "name": "ice cream ~Малиновый пломбир~",
+      "price": 2500,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://i.pinimg.com/736x/5a/39/f6/5a39f638d4092e716a3b2b065eedf0b6.jpg",
+      "type": "Мороженое",
+      "id": "1aba"
+    },
+    {
+      "myId": "9",
+      "name": "ice cream ~Цветочный пломбир~",
+      "price": 3000,
+      "count": 1,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/736x/ae/60/c8/ae60c8c1d89d8eebb05b1a92331f2c4c.jpg",
+      "type": "Мороженое",
+      "id": "9819"
+    },
+    {
+      "myId": "10",
+      "name": "yogurt ~Чиа~",
+      "price": 1200,
+      "count": 1,
+      "country": "Russia",
+      "img": "https://i.pinimg.com/564x/c0/fc/d6/c0fcd60f8362f5b47753587090664aa8.jpg",
+      "type": "Йогурт",
+      "id": "5377"
+    },
+    {
+      "myId": "11",
+      "name": "yogurt ~Банан~",
+      "price": 1400,
+      "count": 1,
+      "country": "South Korea",
+      "img": "https://i.pinimg.com/564x/18/89/2a/18892a2115bb5d188f56c7fc8bc9f33d.jpg",
+      "type": "Йогурт",
+      "id": "bf1e"
+    }
+  ]
 }

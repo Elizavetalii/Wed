@@ -4,6 +4,12 @@ import axios from 'axios';
 
 const CardSweets = (props) => {
 
+  const [selectedType, setSelectedType] = React.useState(null);
+
+  const onTypeChange = (type) => {
+    setSelectedType(type);
+  };
+
   const onAddOverlay = (obj) => {
     try{
       if(props.overlayItems.find(item => Number(item.id) === Number(obj.id))){
@@ -36,10 +42,33 @@ const CardSweets = (props) => {
     }
   };
 
+  const onSearch = (inputValue) => {
+    props.setSearch(inputValue.target.value);
+
+  };
+
   return (
     <div className="sweet">
-        {
-            props.item.map(obj=>{
+      <div>
+        <input onChange={onSearch} placeholder="Поиск"></input>
+      </div>
+      <div>
+        <select onChange={(e) => onTypeChange(e.target.value)}>
+          <option value="">Все типы</option>
+          <option value="Торты">Торты</option>
+          <option value="Ягоды">Ягоды</option>
+          <option value="Коктели">Коктели</option>
+          <option value="Йогурт">Йогурты</option>
+          <option value="Мороженое">Мороженое</option>
+        </select>
+      </div>
+
+      {
+          props.item
+          .filter((item) =>
+            (!selectedType || item.type === selectedType) && item.name.toLowerCase().includes(props.search.toLowerCase())
+          )
+          .map(obj=>{
                 return(
                     <Sweets
                     myId={obj.myId}
